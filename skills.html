@@ -1,0 +1,523 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skills | Muhammad Haikal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* MOBILE HAMBURGER MENU */
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: #00baff;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .header .navbar {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                padding-top: 15px;
+            }
+
+            .header .navbar.active {
+                display: flex;
+            }
+
+            .header .navbar a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            PERSONAL PORTFOLIO<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html" class="active">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Skills Section -->
+    <section class="skills-section">
+
+        <div class="section-heading">
+
+            <span>MY TECHNICAL ABILITIES</span>
+
+            <h1>My <span>Skills</span></h1>
+
+            <p>
+                My technical skills, programming knowledge
+                and software tools that I have learned
+                throughout my studies.
+            </p>
+
+        </div>
+
+
+        <div class="skills-container">
+
+
+            <!-- 1. Technical Skills -->
+            <div class="skill-card">
+
+                <div class="skill-icon">⚡</div>
+
+                <h2>Technical Skills</h2>
+
+                <p>
+                    Practical electronics skills and
+                    basic engineering knowledge.
+                </p>
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Circuit Assembly</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Electronic Troubleshooting</span>
+                        <span>65%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Circuit Testing</span>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 2. Programming Skills -->
+            <div class="skill-card">
+
+                <div class="skill-icon">💻</div>
+
+                <h2>Programming Skills</h2>
+
+                <p>
+                    Interested in programming and
+                    developing practical applications.
+                </p>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>C / C++ Programming</span>
+                        <span>65%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Arduino Programming</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>HTML & CSS</span>
+                        <span>45%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 45%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>JavaScript</span>
+                        <span>35%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 35%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 3. Industrial Automation -->
+            <div class="skill-card">
+
+                <div class="skill-icon">🤖</div>
+
+                <h2>Industrial Automation</h2>
+
+                <p>
+                    Knowledge and interest in industrial
+                    control and automation systems.
+                </p>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>HMI Design</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>PLC Programming</span>
+                        <span>30%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 30%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Industrial Automation</span>
+                        <span>40%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 4. Software & Tools -->
+            <div class="skill-card">
+
+                <div class="skill-icon">🛠️</div>
+
+                <h2>Software & Tools</h2>
+
+                <p>
+                    Software applications used for
+                    programming, designing and engineering.
+                </p>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Arduino IDE</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>Visual Studio Code</span>
+                        <span>65%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 65%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>EasyEDA</span>
+                        <span>50%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 50%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>AutoCAD</span>
+                        <span>40%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 40%;"></div>
+                    </div>
+
+                </div>
+
+
+                <div class="skill-item">
+
+                    <div class="skill-info">
+                        <span>PIStudio</span>
+                        <span>70%</span>
+                    </div>
+
+                    <div class="progress-bar">
+                        <div class="progress" style="width: 70%;"></div>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- 5. Soft Skills -->
+            <div class="skill-card">
+
+                <div class="skill-icon">🤝</div>
+
+                <h2>Soft Skills</h2>
+
+                <p>
+                    Personal abilities that help me work
+                    effectively and improve myself.
+                </p>
+
+                <div class="soft-skill-item">
+                    <span>Communication</span>
+                    <span>🗣️</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <span>Time Management</span>
+                    <span>⏰</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <span>Teamwork</span>
+                    <span>🤝</span>
+                </div>
+
+                <div class="soft-skill-item">
+                    <span>Willingness to Learn</span>
+                    <span>📚</span>
+                </div>
+
+            </div>
+
+
+
+            <!-- 6. Languages -->
+            <div class="skill-card">
+
+                <div class="skill-icon">🌐</div>
+
+                <h2>Languages</h2>
+
+                <p>
+                    Languages that I can communicate
+                    with in daily and academic environments.
+                </p>
+
+                <div class="language-item">
+                    <div class="language-info">
+                        <span>Malay</span>
+                        <span class="language-level fluent">
+                            Fluent
+                        </span>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-info">
+                        <span>English</span>
+                        <span class="language-level intermediate">
+                            Intermediate
+                        </span>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-info">
+                        <span>Arabic</span>
+                        <span class="language-level basic">
+                            Basic
+                        </span>
+                    </div>
+                </div>
+
+                <div class="language-item">
+                    <div class="language-info">
+                        <span>Mandarin</span>
+                        <span class="language-level basic">
+                            Basic
+                        </span>
+                    </div>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Muhammad Haikal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Hamburger Menu JavaScript -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        if (menuToggle && navbar) {
+
+            menuToggle.addEventListener("click", function () {
+
+                navbar.classList.toggle("active");
+
+                const isOpen = navbar.classList.contains("active");
+
+                menuToggle.textContent = isOpen ? "✕" : "☰";
+
+                menuToggle.setAttribute("aria-expanded", isOpen);
+
+            });
+
+            navbar.querySelectorAll("a").forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navbar.classList.remove("active");
+
+                    menuToggle.textContent = "☰";
+
+                    menuToggle.setAttribute("aria-expanded", "false");
+
+                });
+
+            });
+
+        }
+    </script>
+
+</body>
+</html>

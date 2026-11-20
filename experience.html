@@ -1,0 +1,289 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Experience & Activities | Muhammad Haikal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* MOBILE HAMBURGER MENU */
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: #00baff;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .header .navbar {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                padding-top: 15px;
+            }
+
+            .header .navbar.active {
+                display: flex;
+            }
+
+            .header .navbar a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            PERSONAL PORTFOLIO<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html">Projects</a>
+            <a href="experience.html" class="active">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Experience Section -->
+    <section class="experience-section">
+
+        <div class="experience-heading">
+
+            <span>MY JOURNEY & INVOLVEMENT</span>
+
+            <h1>Experience <span>& Activities</span></h1>
+
+            <p>
+                My practical working experience and involvement
+                in university sports activities.
+            </p>
+
+        </div>
+
+
+        <div class="experience-container">
+
+
+            <!-- WORK EXPERIENCE -->
+            <div class="experience-card">
+
+                <div class="experience-number">
+                    WORK EXPERIENCE
+                </div>
+
+                <div class="experience-icon">💼</div>
+
+                <h2>Internship</h2>
+
+                <div class="experience-tags">
+                    <span>2024</span>
+                    <span>Industrial Training</span>
+                </div>
+
+                <h3>UniNet Sdn. Bhd.</h3>
+
+                <p class="experience-role">
+                    Internship Student
+                </p>
+
+                <div class="experience-details">
+
+                    <h4>Responsibilities</h4>
+
+                    <ul>
+                        <li>
+                            Installed and configured CCTV systems
+                            and Wi-Fi routers.
+                        </li>
+
+                        <li>
+                            Assisted in setting up autogate control
+                            systems and wiring.
+                        </li>
+
+                        <li>
+                            Carried out basic troubleshooting and
+                            testing of electronic components.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="experience-skills">
+
+                    <h4>Skills Gained</h4>
+
+                    <div class="experience-tools">
+                        <span>CCTV Installation</span>
+                        <span>Networking</span>
+                        <span>Wiring</span>
+                        <span>Troubleshooting</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            <!-- SPORTS ACTIVITIES -->
+            <div class="experience-card">
+
+                <div class="experience-number">
+                    SPORTS ACTIVITIES
+                </div>
+
+                <div class="experience-icon">🥋</div>
+
+                <h2>Taekwondo Club</h2>
+
+                <div class="experience-tags">
+                    <span>2026</span>
+                    <span>Sports & Co-curricular</span>
+                </div>
+
+                <h3>UMPSA Taekwondo Club</h3>
+
+                <p class="experience-role">
+                    Club Member
+                </p>
+
+                <div class="experience-details">
+
+                    <h4>Involvement</h4>
+
+                    <ul>
+                        <li>
+                            Joined the university Taekwondo Club
+                            as a regular member.
+                        </li>
+
+                        <li>
+                            Participated in club activities and
+                            training sessions.
+                        </li>
+
+                        <li>
+                            Developed discipline, teamwork and
+                            self-confidence through sports.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="experience-skills">
+
+                    <h4>Personal Development</h4>
+
+                    <div class="experience-tools">
+                        <span>Discipline</span>
+                        <span>Teamwork</span>
+                        <span>Self-confidence</span>
+                        <span>Physical Fitness</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Muhammad Haikal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Hamburger Menu JavaScript -->
+    <script>
+
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        if (menuToggle && navbar) {
+
+            menuToggle.addEventListener("click", function () {
+
+                navbar.classList.toggle("active");
+
+                const isOpen = navbar.classList.contains("active");
+
+                menuToggle.textContent = isOpen ? "✕" : "☰";
+
+                menuToggle.setAttribute("aria-expanded", isOpen);
+
+            });
+
+            navbar.querySelectorAll("a").forEach(function (link) {
+
+                link.addEventListener("click", function () {
+
+                    navbar.classList.remove("active");
+
+                    menuToggle.textContent = "☰";
+
+                    menuToggle.setAttribute("aria-expanded", "false");
+
+                });
+
+            });
+
+        }
+
+    </script>
+
+</body>
+</html>
+

@@ -1,0 +1,386 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Projects | Muhammad Haikal</title>
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <style>
+        /* MOBILE HAMBURGER MENU */
+        .menu-toggle {
+            display: none;
+            background: transparent;
+            border: none;
+            color: #00baff;
+            font-size: 28px;
+            cursor: pointer;
+            padding: 5px 10px;
+        }
+
+        @media screen and (max-width: 768px) {
+
+            .header {
+                display: flex;
+                flex-wrap: wrap;
+                justify-content: space-between;
+                align-items: center;
+            }
+
+            .menu-toggle {
+                display: block;
+            }
+
+            .header .navbar {
+                display: none;
+                width: 100%;
+                flex-direction: column;
+                align-items: center;
+                gap: 0;
+                padding-top: 15px;
+            }
+
+            .header .navbar.active {
+                display: flex;
+            }
+
+            .header .navbar a {
+                display: block;
+                width: 100%;
+                text-align: center;
+                padding: 12px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navigation Bar -->
+    <header class="header">
+
+        <a href="index.html" class="logo">
+            PERSONAL PORTFOLIO<span>.</span>
+        </a>
+
+        <button class="menu-toggle" id="menu-toggle"
+                aria-label="Toggle navigation"
+                aria-expanded="false">
+            ☰
+        </button>
+
+        <nav class="navbar" id="navbar">
+            <a href="index.html">Home</a>
+            <a href="about.html">About Me</a>
+            <a href="skills.html">Skills</a>
+            <a href="projects.html" class="active">Projects</a>
+            <a href="experience.html">Experience</a>
+            <a href="contact.html">Contact</a>
+        </nav>
+
+    </header>
+
+
+    <!-- Projects Section -->
+    <section class="projects-section">
+
+        <div class="projects-heading">
+
+            <span>MY WORK & EXPERIENCE</span>
+
+            <h1>My <span>Projects</span></h1>
+
+            <p>
+                A collection of academic projects and practical
+                engineering experiences that I have completed
+                throughout my studies.
+            </p>
+
+        </div>
+
+
+        <div class="projects-container">
+
+
+            <!-- PROJECT 1 -->
+            <div class="project-card">
+
+                <div class="project-number">PROJECT 01</div>
+
+                <div class="project-icon">🔌</div>
+
+                <h2>Smart Environmental & Distance Board</h2>
+
+                <div class="project-tags">
+                    <span>BVI1125</span>
+                    <span>PCB Design</span>
+                </div>
+
+                <p class="project-description">
+                    An ESP32-based monitoring system designed
+                    to measure environmental conditions such as
+                    temperature, humidity and atmospheric pressure,
+                    together with object distance measurement.
+                </p>
+
+                <div class="project-details">
+
+                    <h3>My Role & Contributions</h3>
+
+                    <ul>
+                        <li>
+                            Designed electronic circuit schematics
+                            using EasyEDA.
+                        </li>
+
+                        <li>
+                            Designed the dual-layer PCB layout.
+                        </li>
+
+                        <li>
+                            Performed PCB routing and component
+                            arrangement.
+                        </li>
+
+                        <li>
+                            Conducted ERC and DRC verification.
+                        </li>
+
+                        <li>
+                            Prepared the Bill of Materials (BOM).
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="project-tools">
+
+                    <h3>Tools & Technologies</h3>
+
+                    <div class="tools-list">
+                        <span>EasyEDA</span>
+                        <span>ESP32</span>
+                        <span>BME280</span>
+                        <span>HC-SR04</span>
+                        <span>PCB Design</span>
+                    </div>
+
+                </div>
+
+                <a href="report/BVI1125_Group9_FinalReport.pdf"
+                   target="_blank"
+                   class="project-report-btn">
+                    View Project Report (PDF)
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 2 -->
+            <div class="project-card">
+
+                <div class="project-number">PROJECT 02</div>
+
+                <div class="project-icon">📊</div>
+
+                <h2>Energy Monitoring App</h2>
+
+                <div class="project-tags">
+                    <span>Mini Project TSP II</span>
+                    <span>Programming</span>
+                </div>
+
+                <p class="project-description">
+                    A Python-based Energy Monitoring Application
+                    developed to monitor and visualize electrical
+                    energy consumption through an interactive
+                    dashboard.
+                </p>
+
+                <div class="project-details">
+
+                    <h3>My Role & Contributions</h3>
+
+                    <ul>
+                        <li>
+                            Developed application coding using Python.
+                        </li>
+
+                        <li>
+                            Built an interactive dashboard using Streamlit.
+                        </li>
+
+                        <li>
+                            Processed and organized energy data.
+                        </li>
+
+                        <li>
+                            Developed charts to display voltage,
+                            current and power consumption.
+                        </li>
+
+                        <li>
+                            Implemented energy usage and estimated
+                            electricity cost calculations.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="project-tools">
+
+                    <h3>Tools & Technologies</h3>
+
+                    <div class="tools-list">
+                        <span>Python</span>
+                        <span>Streamlit</span>
+                        <span>InfluxDB</span>
+                        <span>Pandas</span>
+                        <span>Node-RED</span>
+                    </div>
+
+                </div>
+
+                <a href="report/SLIDE%20MINI%20PROJECT%20TSP%20II.pdf"
+                   target="_blank"
+                   class="project-report-btn">
+                    View Project Report (PDF)
+                </a>
+
+            </div>
+
+
+
+            <!-- PROJECT 3 -->
+            <div class="project-card">
+
+                <div class="project-number">PROJECT 03</div>
+
+                <div class="project-icon">🤖</div>
+
+                <h2>VAC Car Headlamp Installation</h2>
+
+                <div class="project-tags">
+                    <span>BVI2125</span>
+                    <span>Flexible Manufacturing System II</span>
+                </div>
+
+                <p class="project-description">
+                    An industrial automation project involving
+                    a collaborative robot (TM5-700) for automated
+                    car headlamp installation using a conveyor
+                    and robotic system.
+                </p>
+
+                <div class="project-details">
+
+                    <h3>My Role & Contributions</h3>
+
+                    <ul>
+                        <li>
+                            Served as the Cobot Programmer.
+                        </li>
+
+                        <li>
+                            Programmed robot movements for
+                            gripping, moving and placing components.
+                        </li>
+
+                        <li>
+                            Developed robot operations for
+                            Right-Hand (RH) and Left-Hand (LH)
+                            headlamp installation.
+                        </li>
+
+                        <li>
+                            Implemented cobot interlock logic
+                            using a flowchart.
+                        </li>
+
+                        <li>
+                            Tested and verified cobot operations
+                            within the automated system.
+                        </li>
+                    </ul>
+
+                </div>
+
+                <div class="project-tools">
+
+                    <h3>Tools & Technologies</h3>
+
+                    <div class="tools-list">
+                        <span>TM5-700 Cobot</span>
+                        <span>TMFlow</span>
+                        <span>PLC</span>
+                        <span>Pneumatic Gripper</span>
+                        <span>Industrial Automation</span>
+                    </div>
+
+                </div>
+
+                <a href="report/VC24025_VC24048_VC24053_VC24036_VC24023%20%283%29.pdf"
+                   target="_blank"
+                   class="project-report-btn">
+                    View Project Report (PDF)
+                </a>
+
+            </div>
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- Footer -->
+    <footer class="footer">
+
+        <p>
+            &copy; 2026 Muhammad Haikal.
+            All Rights Reserved.
+        </p>
+
+    </footer>
+
+
+    <!-- Hamburger Menu JavaScript -->
+    <script>
+        const menuToggle = document.getElementById("menu-toggle");
+        const navbar = document.getElementById("navbar");
+
+        menuToggle.addEventListener("click", function () {
+
+            navbar.classList.toggle("active");
+
+            const isOpen = navbar.classList.contains("active");
+
+            menuToggle.textContent = isOpen ? "✕" : "☰";
+
+            menuToggle.setAttribute("aria-expanded", isOpen);
+
+        });
+
+        navbar.querySelectorAll("a").forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navbar.classList.remove("active");
+
+                menuToggle.textContent = "☰";
+
+                menuToggle.setAttribute("aria-expanded", "false");
+
+            });
+
+        });
+    </script>
+
+</body>
+</html>
