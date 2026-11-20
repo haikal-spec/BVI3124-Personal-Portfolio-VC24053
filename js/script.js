@@ -115,7 +115,56 @@ function updateCopyrightYear() {
 
 
 // ========================================
-// 4. RUN ALL FUNCTIONS
+// 4. CONTACT FORM VALIDATION
+// ========================================
+
+function contactFormValidation() {
+
+    const contactForm = document.getElementById("contactForm");
+
+    if (contactForm) {
+
+        contactForm.addEventListener("submit", function(event) {
+
+            event.preventDefault();
+
+            const name = document.getElementById("name").value.trim();
+            const email = document.getElementById("email").value.trim();
+            const subject = document.getElementById("subject").value.trim();
+            const message = document.getElementById("message").value.trim();
+
+            const emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+            if (
+                name === "" ||
+                email === "" ||
+                subject === "" ||
+                message === ""
+            ) {
+
+                alert("Please fill in all fields.");
+
+            }
+            else if (!emailPattern.test(email)) {
+
+                alert("Please enter a valid email address.");
+
+            }
+            else {
+
+                alert("Your message has been validated successfully.");
+
+                contactForm.reset();
+
+            }
+
+        });
+    }
+}
+
+
+// ========================================
+// 5. RUN ALL FUNCTIONS
 // ========================================
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -126,16 +175,21 @@ document.addEventListener("DOMContentLoaded", function() {
 
     updateCopyrightYear();
 
+    contactFormValidation();
+
 });
 
 
-// MOBILE HAMBURGER MENU
+// ========================================
+// 6. MOBILE HAMBURGER MENU
+// ========================================
+
 const menuToggle = document.getElementById("menu-toggle");
 const navbar = document.getElementById("navbar");
 
 if (menuToggle && navbar) {
 
-    menuToggle.addEventListener("click", function () {
+    menuToggle.addEventListener("click", function() {
 
         navbar.classList.toggle("active");
 
